@@ -1,6 +1,6 @@
 ﻿// HW1b Grade
 
-// Your Name:
+// Gabe Richardson:
 // Did you seek help ? If yes, specify the helper or web link here: 
 
 using System;
