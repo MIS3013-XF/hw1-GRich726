@@ -29,7 +29,7 @@ namespace HW1a_Sales
             int ticketprice = Convert.ToInt32(ticketpriceInput);
 
             //double SalesTax = 8.5;
-            //double subtotal
+            //double subtotal = product +  
             
         }
     }
