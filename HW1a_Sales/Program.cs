@@ -1,6 +1,6 @@
 ﻿// HW1a Sales Total
 
-// Your Name:
+// Your Name: Gabe Richardson
 // Did you seek help ? If yes, specify the helper or web link here: 
 
 using System;
@@ -20,17 +20,23 @@ namespace HW1a_Sales
             Console.WriteLine("What product are you buying? "); //product
             string product = Console.ReadLine();
             
-            Console.WriteLine("How many tickets are you buying? "); //ticket amount
-            string ticketamountInput = Console.ReadLine();
-            int ticketamount = Convert.ToInt32(ticketamountInput);
+            Console.WriteLine("What is the quantity of your purchase? "); //ticket amount
+            string productamountInput = Console.ReadLine();
+            int productamount = Convert.ToInt32(productamountInput);
             
-            Console.WriteLine("What is the price for each football ticket?"); //ticket price
-            string ticketpriceInput = Console.ReadLine();
-            int ticketprice = Convert.ToInt32(ticketpriceInput);
+            Console.WriteLine("What is the individual price? "); //ticket price
+            string productpriceInput = Console.ReadLine();
+            int productprice = Convert.ToInt32(productpriceInput);
 
-            //double SalesTax = 8.5;
-            //double subtotal = product +  
-            
+            double subtotal = (productamount * productprice); //subtotal
+            double salestax = 0.085;
+            double saletaxamount = (subtotal * salestax);
+            double finaltotal = (subtotal + saletaxamount);
+
+            //printing outputs
+            Console.WriteLine("     Your subtotal is: " + subtotal);
+            Console.WriteLine("     Your sales tax is " + saletaxamount);
+            Console.WriteLine("     Your total is: " + finaltotal);
         }
     }
 }
