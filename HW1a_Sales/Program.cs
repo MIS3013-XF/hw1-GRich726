@@ -26,7 +26,7 @@ namespace HW1a_Sales
             
             Console.WriteLine("What is the individual price? "); //ticket price
             string productpriceInput = Console.ReadLine();
-            int productprice = Convert.ToInt32(productpriceInput);
+            double productprice = Convert.ToDouble(productpriceInput);
 
             double subtotal = (productamount * productprice); //subtotal
             double salestax = 0.085;
