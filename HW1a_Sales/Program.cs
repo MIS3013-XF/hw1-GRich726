@@ -29,7 +29,7 @@ namespace HW1a_Sales
             double productprice = Convert.ToDouble(productpriceInput);
 
             double subtotal = (productamount * productprice); //subtotal
-            double salestax = 0.085;
+            const double salestax = 0.085;
             double saletaxamount = (subtotal * salestax);
             double finaltotal = (subtotal + saletaxamount);
 
